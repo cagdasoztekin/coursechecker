@@ -119,7 +119,7 @@ public class OfferingsChecker
 				
 				courses.get(i).setQuota(currentQuota);
 				
-				System.out.println("Sleeping for " + (int)(interval/numOfCourses) + " ms");
+//				System.out.println("Sleeping for " + (int)(interval/numOfCourses) + " ms");
 				
 				Thread.sleep((int)(interval/numOfCourses));
 			}
@@ -243,7 +243,7 @@ public class OfferingsChecker
 	{
 		final String username = from;
         final String password = pass;
-        System.out.println("from " + from + " pass " + pass);
+//        System.out.println("from " + from + " pass " + pass);
         Properties props = new Properties();
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.auth", "true");
